@@ -54,7 +54,7 @@ const Sidebar = () => {
              }}
             key={category.name}>
                 <span style={{ color: category.name === selected ? 'white' : 'red', marginRight: '15px' }}>{category.icon}</span>
-                <span>{category.name}</span>
+                <span style={{ opacity: category.name === selected ? '1' : '0.7'}}>{category.name}</span>
             </button>
 
         ))}
